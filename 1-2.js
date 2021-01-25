@@ -24,7 +24,7 @@ checkPermutation = function(str1, str2) {
     if (!charDict[letter]) {
       return false;
     } else {
-      !charDict[letter]--;
+      charDict[letter]--;
     }
   }
   return Object.values(charDict).every(n => n === 0);
